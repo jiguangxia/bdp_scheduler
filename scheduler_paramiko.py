@@ -9,7 +9,7 @@ import os
 #-------------- download data from bdp
 
 os.system("""
-hive -e "SELECT * FROM gdm.gdm_03_item_sku_da LIMIT 100;" > input.txt
+hive -e "SELECT * FROM gdm.gdm_m03_item_sku_da LIMIT 100;" > input.txt
 """)
 
 
@@ -44,7 +44,7 @@ stdin, stdout, stderr = client.exec_command("python mytask.py")
 # 等待程序运行完成
 # 如果程序运行时间较长，可以尝试每次循环内建立连接，检查状态，再关闭
 while True:
-    time.sleep(5)   # 60 seconds or more for big task
+    time.sleep(30)   # 60 seconds or more for big task
     if '__success__' in sftp.listdir():
         break
 

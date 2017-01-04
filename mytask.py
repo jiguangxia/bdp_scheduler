@@ -7,7 +7,7 @@ import time
 f = open('result.txt','w')
 for i in range(10):
     f.write(str(i) + '\n')
-    time.sleep(1)
+    time.sleep(10)
 
 f.close()
 
