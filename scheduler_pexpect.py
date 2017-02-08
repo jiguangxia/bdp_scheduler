@@ -25,7 +25,8 @@ hive -e "SELECT * FROM gdm.gdm_m03_item_sku_da LIMIT 100;" > input.txt
 #-------------- send data (and scipt) to remote, and calculation
 
 # 上传文件到远程主机
-pexpect.run('scp input.txt %s@%s:%s' % (username,hostname,work_dir) ,withexitstatus=1,events={'password': password})
+# 如果文件较大，需要将timeout参数设置大一些
+pexpect.run('scp input.txt %s@%s:%s' % (username,hostname,work_dir) ,timeout=300, withexitstatus=1,events={'password': password})
 
 
 # 初始化状态
