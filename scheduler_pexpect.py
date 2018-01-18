@@ -3,7 +3,7 @@
 
 import sys
 import time
-sys.path.append('/home/mart_cis/data_dir/xia/local/lib/python2.7/site-packages/')
+sys.path.append('/home/mart_rmb/data_dir/xiajiguang/usr/lib/python2.7/site-packages/')
 import pexpect
 
 #-------------- parameters
