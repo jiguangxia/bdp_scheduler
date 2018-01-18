@@ -21,10 +21,8 @@ scheduler.sh              | expect tool in linux
 
 2. decompress it
 
-    tar -zxvf pexpect-3.2.tar.gz
+<p>tar -zxvf pexpect-3.2.tar.gz</p>
 
 3. install use python
-
-    cd pexpect-3.2
-
-    python setup.py install --prefix=/home/mart_rmb/data_dir/xiajiguang/usr
+<p>cd pexpect-3.2</p>
+<p>python setup.py install --prefix=/home/mart_rmb/data_dir/xiajiguang/usr</p>
